@@ -1,5 +1,7 @@
 pipeline {
-    agent 'Win037'
+    agent {
+        label 'Win037'
+    }    
 
     stages {
         stage('Экспорт конфигурации из EDT в XML') {
