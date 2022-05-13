@@ -2,7 +2,7 @@ pipeline {
     agent 'Win037'
 
     stages {
-        stage('Конвертация конфигурации в XML') {
+        stage('Экспорт конфигурации из EDT в XML') {
             steps {
                 timestamps {
                     cmd("ring edt workspace export --workspace-location C:\Jenkins\workspace\EDT --project C:\Jenkins\workspace\EDT\edt_test --configuration-files C:\Jenkins\workspace\EDT\edt-export")
