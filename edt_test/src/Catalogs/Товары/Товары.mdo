@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="163a85ad-edcc-43d7-bf21-5ed741f3dcbd">
+  <producedTypes>
+    <objectType typeId="1244ea92-c46b-4b14-a3d5-eefa9c246fa7" valueTypeId="c7b8c752-d362-40b3-ae68-41b9d6289cb5"/>
+    <refType typeId="b21c586b-bf99-498b-95d8-1174ea31c54d" valueTypeId="e0ea4c04-30f7-438f-b854-09239296e340"/>
+    <selectionType typeId="7e69b8e1-6d84-474d-b4b4-3bc02647d405" valueTypeId="c3adc66c-ca0a-4216-b1f4-124992edd426"/>
+    <listType typeId="27c2f1f8-f383-4dd0-bb66-fba0ed9621d5" valueTypeId="03c0e17e-c423-4f24-afd1-de771cdb44ed"/>
+    <managerType typeId="726363b1-e027-4018-9881-390b9e5d932b" valueTypeId="576f1946-156d-4ca7-bb0f-3590dd13fb3c"/>
+  </producedTypes>
+  <name>Товары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товары</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Товары.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Товары.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родитель</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Товары</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
