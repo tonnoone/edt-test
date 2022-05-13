@@ -5,7 +5,7 @@ pipeline {
         stage('Экспорт конфигурации из EDT в XML') {
             steps {
                 timestamps {
-                    cmd("ring edt workspace export --workspace-location C:\Jenkins\workspace\EDT --project C:\Jenkins\workspace\EDT\edt_test --configuration-files C:\Jenkins\workspace\EDT\edt-export")
+                    cmd("ring edt workspace export --workspace-location C:\\Jenkins\\workspace\н\EDT --project C:\\Jenkins\\workspace\\EDT\\edt_test --configuration-files C:\\Jenkins\\workspace\\EDT\\edt-export")
                 }
             }
         }
