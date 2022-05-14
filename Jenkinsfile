@@ -34,7 +34,7 @@ pipeline {
         stage('Загружаем xml файлы в конфигурацию') {
             steps {
                 timestamps {
-                    cmd("${env:PathOf1C} DESIGNER /F D:\\Jenkins\\workspace\\edt-base /LoadConfigFromFiles D:\\Jenkins\\workspace\\edt-export /UpdateDBCfg")
+                    cmd("${env:PathOf1C} DESIGNER /F D:\\Jenkins\\workspace\\edt-base /LoadConfigFromFiles D:\\Jenkins\\workspace\\edt-export")
                 }
             }
         }
