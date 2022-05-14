@@ -8,9 +8,9 @@ pipeline {
             steps {
                 timestamps {
                     //cleanWs()
-                    cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-base")
-                    cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-cf")
-                    cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-export")
+                    //cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-base")
+                    //cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-cf")
+                    //cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-export")
                 }
             }
         }
