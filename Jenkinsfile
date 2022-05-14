@@ -35,9 +35,9 @@ pipeline {
             steps {
                 timestamps {
                     script {
-                        action = "/LoadConfigFromFiles D:\\Jenkins\\workspace\\edt-export /DisableStartupDialogs /DisableSplash /DisableStartupMessages /UpdateDBCfg"
+                        action = "/LoadConfigFromFiles ${env:EDT-Export} /UpdateDBCfg"
                     }
-                    cmd("${env:PathOf1C} DESIGNER /F D:\\Jenkins\\workspace\\edt-base ${action}")
+                    cmd("${env:PathOf1C} DESIGNER /F ${env:EDT-Base} ${action}")
                 }
             }
         }
