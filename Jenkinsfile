@@ -26,7 +26,7 @@ pipeline {
         stage('Создаем пустую файловую базу данных') {
             steps {
                 timestamps {
-                    cmd("${env:PathOf1C} CREATEINFOBASE File=${env:EDT-Base}")
+                    cmd("${env:PathOf1C} CREATEINFOBASE File=${env:EDTBase}")
                 }
             }
         }
@@ -37,7 +37,7 @@ pipeline {
                     script {
                         extraPath = "/LoadConfigFromFiles ${env:EDT-Export} /UpdateDBCfg"
                     }
-                    cmd("${env:PathOf1C} DESIGNER /F ${env:EDT-Base} ${extraPath}")
+                    cmd("${env:PathOf1C} DESIGNER /F ${env:EDTBase} ${extraPath}")
                 }
             }
         }
