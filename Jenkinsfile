@@ -7,7 +7,7 @@ pipeline {
         stage('Подготовка каталогов') {
             steps {
                 timestamps {
-                    cleanWs()
+                    //cleanWs()
                     cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-base")
                     cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-cf")
                     cmd("mkdir C:\\Jenkins\\workspace\\EDT\\edt-export")
