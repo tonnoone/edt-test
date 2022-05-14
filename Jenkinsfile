@@ -18,7 +18,7 @@ pipeline {
         stage('Экспорт конфигурации из EDT в XML') {
             steps {
                 timestamps {
-                    cmd("ring edt workspace export --workspace-location C:\\Jenkins\\workspace\\EDT --project C:\\Jenkins\\workspace\\EDT\\edt_test --configuration-files C:\\Jenkins\\workspace\\EDT\\edt-export")
+                    cmd("ring edt workspace export --workspace-location C:\\Jenkins\\workspace\\EDT --project C:\\Jenkins\\workspace\\EDT\\edt_test --configuration-files D:\\Jenkins\\workspace\\edt-export")
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
         stage('Создаем пустую файловую базу данных') {
             steps {
                 timestamps {
-                    cmd("${env:PathOf1C} CREATEINFOBASE File=C:\\Jenkins\\workspace\\EDT\\edt-base")
+                    cmd("${env:PathOf1C} CREATEINFOBASE File=D:\\Jenkins\\workspace\\edt-base")
                 }
             }
         }
@@ -34,7 +34,7 @@ pipeline {
         stage('Загружаем xml файлы в конфигурацию') {
             steps {
                 timestamps {
-                    cmd("${env:PathOf1C} DESIGNER /F C:\\Jenkins\\workspace\\EDT\\edt-base /LoadConfigFromFiles C:\\Jenkins\\workspace\\EDT\\edt-export /UpdateDBCfg")
+                    cmd("${env:PathOf1C} DESIGNER /F D:\\Jenkins\\workspace\\edt-base /LoadConfigFromFiles D:\\Jenkins\\workspace\\edt-export /UpdateDBCfg")
                 }
             }
         }
@@ -42,7 +42,7 @@ pipeline {
         stage('Выгрузка конфигурации в файл') {
             steps {
                 timestamps {
-                    cmd("${env:PathOf1C} DESIGNER /F C:\\Jenkins\\workspace\\EDT\\edt-base /DumpCfg C:\\Jenkins\\workspace\\EDT\\edt-cf\1cv8.cf")
+                    cmd("${env:PathOf1C} DESIGNER /F D:\\Jenkins\\workspace\\edt-base /DumpCfg D:\\Jenkins\\workspace\\edt-cf\1cv8.cf")
                 }
             }
         }
